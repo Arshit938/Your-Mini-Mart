@@ -1,0 +1,487 @@
+<!-- if any error occurs that cant be fixed last backup will be in index2.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>YOUR MINI MART</title>
+  <!-- CSS -->
+  <style>
+    .col-md-3,
+    .col-sm-3,
+    .col-xs-3 {
+      display: inline-block;
+      margin-left: 10cm;
+    }
+
+    .col-sm-3 img {
+      width: auto;
+      height: 240px;
+    }
+
+    body.carousel-indecator li {
+      background-color: grey;
+    }
+
+    .but.carousel-control-prev-icon .but.carousel-control-next-icon {
+      background-color: black;
+    }
+
+    .but.carousel-control-next-icon {
+      display: inline-block;
+      margin-right: 1cm;
+    }
+
+    .but {
+      display: inline-block;
+      margin-top: 12cm;
+    }
+
+    h3 {
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      margin-left: 150px;
+    }
+    /* card shadowing */
+    .card{
+      box-shadow: 0 12px 20px rgba(0,0,0,.08), 0 0 12px rgba(0,0,0,.05);
+    }
+    .categories .abc :hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    /* category broshers */
+    .option .card{
+      width: 900px;
+      height: 490px;
+      margin-left: 110px;
+      margin-bottom: 30px;
+    }
+    .abc img{
+      height:420px;
+    }
+    .option .card-title{
+      font-family: cursive;
+      display: inline-block;
+    }
+    .option .card-body button{
+        width:auto;
+        height:30px;
+        margin-top: -10px;
+        padding-left: 4px;
+      }
+    .option .card-body p{
+        font-size: 18px;
+        margin-top: -6px;
+        padding-left: 4px;
+      }
+      .option .card-body{
+        display: inline-block;
+      }
+      /* slide */
+      #slide{
+        display: inline-block; 
+        margin-left: 2px;
+      }
+      #croselcontainer{
+        display: inline-block;
+        margin-left: 120px;
+      }
+      #slide .card, .mt-3, .mr-3{
+        width: 250px;
+        height :440px;
+
+      }
+      #slide .card-body{
+        display: inline-block;
+      }
+      #slide .card-body form{
+        display: inline-block;
+      }
+      #slidebutton{
+        margin-top: 60px;
+        display: inline-block;
+      }
+      #button-l{
+        height: 32px;
+        width: 32px;
+        display: inline-block;
+        margin-top: 200px;
+      }
+      #button-r{
+        height: 32px;
+        width: 32px;
+        display: inline-block;
+        margin-top: 200px;
+        margin-right: 40px;
+      }
+      /*hidding view and cart symbol */
+      #eye{
+        display: none;
+
+      }
+      #cart{
+        display:none;
+      }
+      #slide .card-body button{
+        height: 40px;
+        width: auto;
+      }
+    @media screen and (max-width : 600px){
+      /* category broshers */
+      .option .card{
+        width: 400px;
+        height: 190px; 
+        margin-left: -30px;
+        margin-bottom: 10px;
+      }
+      .abc img{
+        height:120px;
+      }
+      .option .card-title{
+        font-size: 15px;
+      }
+      .option .card-body button{
+        width:auto;
+        height:20px;
+        margin-top: 0px;
+      }
+      .option .card-body p{
+        font-size: 12px;
+        margin-top: -6px;
+      }
+      /* slide */
+      #slide{
+        display: inline-block; 
+        margin-left: 2px;
+      }
+      #croselcontainer{
+        display: inline-block;
+        margin-left: 0px;
+      }
+      #slide .card, .mt-3, .mr-3{
+        width: 100px;
+        height :200px;
+
+      }
+      #slide .card-body{
+        display: inline-block;
+      }
+      #slide .card-body form{
+        display: inline-block;
+      }
+      #slide .card-body button{
+        height: 18px;
+        width: 18px;
+      }
+      #slidebutton{
+        margin-top: 60px;
+        display: inline-block;
+      }
+      #button-l{
+        height: 10px;
+        width: 10px;
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: -30px;
+      }
+      #button-r{
+        height: 10px;
+        width: 10px;
+        display: inline-block;
+        margin-top: 100px;
+        margin-right: 40px;
+        color: black;
+      }
+      .col-sm-3 img {
+      width: auto;
+      height: 80px;
+    }
+    #slide .card-title{
+      height: 18px;
+      font-size: 9px;
+    }
+    #slide .list-group-item{
+      font-size: 8px;
+      height:12px;
+    } 
+    #eye{
+      display:block;
+      margin-top: -5px;
+      margin-left: -7px;
+    }
+    #cart{
+      display:block;
+      margin-top: -5px;
+      margin-left: -7px;
+    }
+    #atc{
+      display:none;
+    }
+    #v{
+      display:none;
+    }
+
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  {%load static%}
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="icon" style="height: 32px; width :32px;">
+        <svg style="color: black" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+          <path
+            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
+        </svg>
+      </div>
+      <a class="navbar-brand" href="#">YMM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/shop/">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart/">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/help/">help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <form class="d-flex" action="shop/search_prod">
+        <input name="argument" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container" style="display: inline-block; padding-inline: -70px; padding-left: 80px;">
+    <div class="categories">
+      <h3 style="margin-left: 110px;"><b>EXPLORE</b></h3>
+      <div class="option">
+      <div class="card">
+        <div class="abc">  
+          <img src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\mens fashion.webp" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body" style="display: inline-block;">
+          <h4 class="card-title"><b>Men's Fashion</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="men fashion" name="exp" ><p>EXPLORE</p></button>
+          </form>  
+        </div>
+      </div>
+      
+      <div class="card" >
+        <div class="abc">
+          <img  src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\sports.jpg" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+          <h4 class="card-title" ><b>Sports</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="sports"name="exp" ><p>EXPLORE</p></button>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="abc">
+          <img  src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\Electronics.jpg" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+          <h4 class="card-title" ><b>Electronics</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="electronics" name="exp"><p>EXPLORE</p></button>
+          </form>
+        </div>
+      </div>
+      <div class="card" >
+        <div class="abc">
+          <img  src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\grocery.jpeg" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+          <h4 class="card-title" ><b >Grocery</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="grocery" name="exp"><p>EXPLORE</p></button>
+          </form>
+        </div>
+      </div>
+      <div class="card" >
+        <div class="abc">  
+          <img  src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\smartphones.webp" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body" >
+          <h4 class="card-title" style="display: inline-block;"><b style=" font-family: cursive;">Smartphones</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="smartphones" name="exp"><p>EXPLORE</p></button>
+          </form>
+        </div>
+      </div>
+      <div class="card " >
+        <div class="abc">
+          <img  src="/media/E:\PROGRAMMING\python\django programs\your mini mart\shop\static\shop\women fashion.webp" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body" >
+          <h4 class="card-title" ><b>Women's Fashion</b></i></h4>
+          <form action="shop/explore" style="display: inline-block; margin-bottom: 10px;">  
+            <button class="btn btn-outline-dark" type="submit" value="women fashion" name="exp"><p>EXPLORE</p></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    {% for product,range,nslides in allprod %}
+    {% if forloop.first %}
+    <h3><b>Daily deals</b></h3>
+    {% else %}
+    <h3> <b>{{product.0.catagory}}</b></h3>
+    {% endif %}
+    <div id="deals{{forloop.counter}}" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+
+      <div class="carousel-indicators">
+        {% for i in range %}
+        {% if forloop.first %}
+        <button type="button" data-bs-target="#deals{{forloop.counter}}" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        {% else %}
+        <button type="button" data-bs-target="#deals{{forloop.counter}}" data-bs-slide-to="{{i}}"
+          aria-label="Slide {{i}}"></button>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div id="croselcontainer" class="container carousel-inner no-padding">
+        {% for i in product %}
+        {% if forloop.first %}
+        <div class="carousel-item active">
+          <!-- 1 -->
+          <div id="slide" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card mt-3 mr-3" >
+              <img src="/media/{{product.0.product_image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><b>{{product.0.product_name}}</b></h>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>PRICE : INR{{product.0.price}}/-</b></li>
+              </ul>
+              <div class="card-body">
+                <!-- in onclick we added alert(this.id) so that we get id of button and and through href we take id to our desired url in url.py and by this we can access it in views.py -->
+                <form action="shop/view_product" method="get" >
+                  <button type="submit" class="btn btn-outline-dark" name="view"
+                    value="{{product.0.product_name}}"><p id="v">VIEW</p><svg id="eye" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                      <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                      <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                    </svg></button>
+                </form>
+                <form action="shop/addtocart" >
+                  <button id="{{product.0.product_name}}" style="display: inline-block;" type="submit"
+                    class="btn btn-outline-dark" name="add to cart" value="{{product.0.product_name}}"
+                    onclick="alert('added to cart')"><p id="atc">ADD TO CART</p><svg id="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          {% else %}
+          <div id="slide" class="col-xs-3 col-sm-3 col-md-3">
+            <div class="card mt-3 mr-3">
+              <img src="/media/{{i.product_image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><b>{{i.product_name}}</b></h6>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>PRICE : INR{{i.price}}/-</b></li>
+              </ul>
+              <div class="card-body">
+                <!-- in onclick we added alert(this.id) so that we get id of button and and through href we take id to our desired url in url.py and by this we can access it in views.py -->
+                <form action="shop/view_product" method="get" >
+                  <button type="submit" class="btn btn-outline-dark" name="view" value="{{i.product_name}}"><p id="v">VIEW</p><svg id="eye" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                  </svg></button>
+                </form>
+                <form action="shop/addtocart" >
+                  <button style="display: inline-block;" id="{{i.product_name}}" type="submit"
+                    class="btn btn-outline-dark" name="add to cart" value="{{i.product_name}}"
+                    onclick="alert('added to cart')"><p id="atc">ADD TO CART</p><svg id="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% if forloop.last %}
+          <!-- i have written forloop.counter = 1 to send the slideshow to start from first slide
+               after the counter is on last slide 
+               i havewritten it inside a <p> tag so to add display : none to hide it from displaying
+                on page
+          -->
+          <p style="display: none;">forloop.counter=1</p>
+
+          {% elif forloop.counter|divisibleby:3 %}
+        </div>
+        <div id="item" class="carousel-item" >
+
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div id="slidebutton">
+        <button id="button-l" class="carousel-control-prev btn-secondary btn-sm" type="button"
+          data-bs-target="#deals{{forloop.counter}}" data-bs-slide="prev">
+          <div class="carousel-control-prev-icon btn-dark"></div>
+          <div class="visually-hidden">Previous</div>
+        </button>
+        <button id="button-r" class="carousel-control-next btn-secondary btn-sm"
+          type="button" data-bs-target="#deals{{forloop.counter}}" data-bs-slide="next">
+          <div class="carousel-control-next-icon btn-dark"></div>
+          <div class="visually-hidden">Next</div>
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+    <!-- <script> -->
+    <!-- //   -->
+    <!-- // </script> -->
+</body>
+
+</html>
