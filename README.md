@@ -1,5 +1,5 @@
 # Your-Mini-Mart
-It is an e-commerce website which can be used for drop shipping of day
+It is an e-commerce website which can be used for buying  day
 to day goods it is built with the help of django, HTML, CSS
 
 # important commands
